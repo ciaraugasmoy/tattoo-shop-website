@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Antic&family=Baloo+Tamma+2&family=Bayon&family=Cutive+Mono&family=Kaushan+Script&family=Staatliches&family=Syne+Mono&display=swap');
+:root {
+    --primary-bg-color: rgb(230, 230, 230);
+    --secondary-bg-color: #101d26;
+    --menu-color: #171817;
+    --menu-font-color: rgba(255, 255, 255, 0.8);
+    --text-light-color: #ffffff;
+    --text-dark-color: black;
+    --accent-color: #d9c048;
+
+    --fancy-font: 'Kaushan Script', cursive;
+    --header-font:'Staatliches', cursive;;
+    --alt-header-font:'Bayon', sans-serif;
+    --content-font:'Antic', sans-serif;
+    --alt-content-font:'Syne Mono', monospace;
+}
+body{
+    font-family: var(--content-font);
+}
+/*NAV BAR SECTION*/
+#navbar{
+    background-color: rgba(0,0,0,0) ;
+    padding:20px 20px; /* Large padding which will shrink on scroll (using JS) */
+    transition: 0.4s; /* Adds a transition effect when the padding is decreased */ /* Sticky/fixed navbar */
+    font-family: var(--alt-content-font);
+}
+#regnavbar{
+    background-color: var(--menu-color);
+    font-family: var(--alt-content-font);
+    padding:0 0;
+}
+
+#navbar .logo{
+    height:100px;
+    transition: 0.4s;
+    margin: 15px 10px 0 10px;
+}
+#regnavbar .logo{
+    height: 30px;
+    margin: 0;
+}
+#navbar .nav-item a, #regnavbar .nav-item a{
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: var(--menu-font-color)!important;
+}
+#regnavbar .nav-item a:hover, #navbar .nav-item a:hover{
+    color: var(--accent-color)!important;
+}
+#navbar .dropdown-menu{
+    background-color: rgba(0,0,0,0);
+    transition: 0.4s;
+    padding: 0;
+    margin: 0 !important;
+    border-color: rgba(0,0,0,0);
+}
+#regnavbar .dropdown-menu{
+    background-color: var(--menu-color);
+    padding: 0;
+    margin: 0 !important;
+    border-color: var(--menu-color);
+}
+#navbar .dropdown-item{
+    margin: 0 !important;
+    background-color: rgba(0,0,0,0);
+    color: var(--menu-font-color);
+    padding: 6px 0 6px 0;
+}
+#regnavbar .dropdown-item{
+    margin: 0 !important;
+    background-color: var(--menu-color);
+    color: var(--menu-font-color);
+    padding: 6px 0 6px 0;
+}
+#regnavbar .dropdown-item, #regnavbar .dropdown-item{
+    border-radius: 0 0 5px 5px;
+}
+
+#collapsibleNavbar.show{
+    transition: 0.4s;
+    padding: 20px;
+    backdrop-filter: blur(5px);
+    margin: 10px 0 10px 0;
+    border-color: var(--menu-color);
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 20px;
+}
+
+/*HERO SECTION*/
+
+h1{
+    font-family: var(--fancy-font);
+}
+#hero {
+    background-color: rgba(0, 0, 0,0.75);
+    height: 100%;
+}
+#hero-text{
+    padding-top:150px;
+    height: 100%;
+}
+#bgimg{
+    background: url("img/main/bodyinknjshop.png") fixed center;
+    height: 105vh;
+    object-fit: cover;
+    margin-top: -30px;
+    transition: 0.4s;
+    border-color: black;
+
+}
+.headerimg{
+    background: url("img/main/bodyinknjshop.png") fixed center;
+    height: 200px;
+    object-fit: cover;
+}
+.social img{
+    height: 30px;
+    margin: 5px;
+}
+
+/*ARTIST SECTION*/
+#artist{
+    background-image: linear-gradient(var(--secondary-bg-color)300px,var(--accent-color)0,var(--primary-bg-color));
+}
+#artist .col-md-6{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+#artist .card{
+    margin-top: 50px;
+    min-width: 350px;
+    max-width: 350px;
+}
+#artist .card, .card-header, .card-footer{
+    color: var(--text-dark-color);
+    font-size: x-large;
+    font-family: var(--content-font);
+    background: white;
+    border-color: rgba(0,0,0,0);
+    border-radius: 20px;
+}
+#artist .card-header, .card-footer{
+    background-color: rgba(0,0,0,0);
+}
+#artist .card img{
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    padding: 10px;
+    background-color: var(--accent-color);
+    display: block;
+    margin: 15px auto 30px;
+}
+button{
+    background-color: rgba(0,0,0,0);
+    border-radius: 25px;
+    border-color: var(--menu-color);
+    color: var(--text-dark-color);
+    font-size: 14px;
+    padding: 8px 20px;
+    margin: 10px 0 20px 0;
+    transition: 0.4s;
+}
+#artist button:hover, #contact-cta button:hover{
+    background-color: var(--menu-color);
+    color: var(--text-light-color);
+    transition: 0.4s;
+}
+
+
+/*Portfolio*/
+#portfolio{
+    background-color: var(--primary-bg-color);
+}
+#portfolio img{
+    width: 100%;
+    border-radius: 20px;
+    margin: 10px 0 10px 0;
+    -moz-box-shadow:     0 0 2px var(--accent-color);
+    -webkit-box-shadow:  0 0 2px var(--accent-color);
+    box-shadow:          0 0 2px var(--accent-color);
+}
+
+
+/*Testimonial Section*/
+
+#testimonial .carousel-item{
+}
+.review{
+    background: var(--secondary-bg-color);
+    height: 400px;
+    color: var(--text-light-color);
+    padding: 10% 12%;
+    text-align: center;
+}
+.review h3{
+    margin-top: 40px;
+}
+
+#testimonial button{
+    border-radius: 0;
+}
+
+/*contact section home*/
+
+#contact-cta iframe{
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+#contact-cta .col-sm-4{
+    padding: 0;
+}
+/*FOOTER*/
+footer{
+    background-color: var(--menu-color);
+    color: var(--menu-font-color);
+    font-family: var(--content-font);
+}
+footer a{
+    color: var(--menu-font-color);
+}
+footer a:hover{
+    color: var(--accent-color);
+}
+footer .text-center{
+    padding:10px 0 20px 0;
+}
+/*Whole document*/
+.container{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+h2,h3,h4,h5{
+    color: var(--accent-color);
+    font-family: var(--header-font);
+    margin: 5px 0 5px 0;
+}
+h6{
+    color: var(--text-dark-color);
+    font-family: var(--content-font);
+    font-weight: bold;
+    margin: 5px 0 3px 0;
+}
+p{
+    font-family: var(--content-font);
+}
+
+#bookcta{
+    padding: 20px;
+}
+
+#piercing img{
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px var(--accent-color);
+    width: 100%;
+}
+
+#contactinfo iframe{
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+#contactinfo table{
+    border-style: none;
+    height: 300px;
+}
+
+#contactinfo form{
+    margin: 15px 20px;
+    color: var(--text-light-color);
+}
+
+#contactinfo .row .section{
+    min-height: 700px;
+    position: relative;
+
+}
+#contactinfo .col-md-5.section{
+    padding: 0;
+}
+#contactinfo .col-md-7.section{
+    background-color: var(--secondary-bg-color);
+}
+#contactinfo #addressinfo{
+    padding: 50px 50px;
+    position: absolute;
+}
+ #spacer{
+    height: 60px;
+}
+#contactinfo #mapwrap{
+    height: 350px;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+#contactinfo button{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    border-color: var(--text-light-color);
+    color: var(--text-light-color);
+    font-size: 14px;
+    padding: 8px 20px;
+    margin: 10px 0 20px 0;
+    transition: 0.4s;
+}
+#contactinfo button:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+
+/*Accordion FAQ*/
+.accordion-button{
+    margin: 0;
+    height: 100%;
+}
+.accordion-button h2{
+    color: red;
+}
+.accordion-item{
+    padding: 0;
+}
+
+/*profile pages*/
+#profilepicture img{
+    border-radius: 200px;
+    width: 100%;
+}
+#profilesection .row> *{
+    padding: 40px;
+}
+.titlespan{
+    background: var(--accent-color);
+}
+.titlespan h1{
+    color: var(--secondary-bg-color);
+    margin: 0;
+    padding: 5px;
+    font-family: var(--header-font);
+}
+
+.accordion button:focus{
+    outline: none!important;
+}
+label{
+    margin: 6px 0 2px 0;
+}
+
+
