@@ -1,4 +1,6 @@
-# bodyinknj
-Project for IS117
+# Project for IS117
 
-Website for tattoo shop
+link to site:
+https://web.njit.edu/~ccu3/liveprojects/tattooshopsite/index.html
+
+Website for tattoo shop BodyInkNJ using bootstrap
